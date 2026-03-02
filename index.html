@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azizee</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        main: "#00D2BE",
+        silver: "#C4C4C4"
+      }
+    }
+  }
+}
+</script>
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+body { font-family: 'Poppins', sans-serif; }
+</style>
+
+</head>
+<body class="bg-black text-white scroll-smooth">
+
+<!-- HEADER -->
+<header class="fixed top-0 w-full h-[80px] flex items-center justify-between px-[10%] bg-black/90 border-b border-main z-50">
+
+    <img src="img/logo-2.png" class="w-[110px]" />
+
+    <ul class="hidden md:flex space-x-10 font-medium">
+        <li><a href="#home" class="hover:text-main transition">Home</a></li>
+        <li><a href="#Biography" class="hover:text-main transition">Biography</a></li>
+        <li><a href="#Arts" class="hover:text-main transition">Arts</a></li>
+    </ul>
+
+    <a href="#" class="hidden md:block px-6 py-2 border border-main text-main rounded-full hover:bg-main hover:text-black transition">
+        Being Fans!
+    </a>
+
+</header>
+
+<!-- HOME -->
+<section id="home" class="min-h-screen grid md:grid-cols-2 items-center px-[10%] pt-[120px] bg-gradient-to-b from-[#0a0a0a] to-black">
+
+    <div>
+        <h1 class="text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-white to-main bg-clip-text text-transparent">
+            Zee Asadel
+        </h1>
+
+        <p class="text-xl text-white/60 mt-4">
+            Where Art, Music, and Performance Unite
+        </p>
+
+        <a href="#" class="inline-block mt-6 px-8 py-4 bg-white text-black font-semibold rounded-full hover:scale-105 transition">
+            Get to Know
+        </a>
+
+        <div class="mt-8">
+            <h5 class="text-silver mb-3">Follow Zee</h5>
+            <div class="flex space-x-6 text-xl">
+                <a href="#" class="hover:text-main transition"><i class="ri-instagram-fill"></i></a>
+                <a href="#" class="hover:text-main transition"><i class="ri-tiktok-fill"></i></a>
+                <a href="#" class="hover:text-main transition"><i class="ri-twitter-x-line"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative mt-10 md:mt-0">
+        <img src="img/zee4.png" class="w-full object-contain drop-shadow-[0_0_25px_rgba(0,210,190,0.5)]">
+
+        <div class="absolute top-10 right-0 bg-black/50 backdrop-blur-md border border-main rounded-xl px-4 py-3">
+            <div class="text-main font-semibold">
+                Actress, Singer & Dancer
+            </div>
+            <div class="text-silver text-sm">
+                Azizi Shafa Azadel
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- BIOGRAPHY -->
+<section id="Biography" class="py-24 px-[10%] bg-gradient-to-b from-black to-[#0f0f0f] text-center">
+
+    <h2 class="text-4xl font-extrabold bg-gradient-to-r from-white to-main bg-clip-text text-transparent">
+        Biography
+    </h2>
+
+    <p class="text-silver mt-3">Get to know Zee closer</p>
+
+    <div class="mt-16 max-w-xl mx-auto bg-[#111111] p-10 rounded-2xl border border-main shadow-[0_0_25px_rgba(0,210,190,0.3)]">
+
+        <div class="text-main text-3xl mb-4">
+            <i class="ri-map-pin-2-line"></i>
+        </div>
+
+        <h3 class="text-xl font-semibold mb-2">Birth Information</h3>
+        <p class="text-lg">Jakarta, 16 May 2004</p>
+        <span class="text-silver text-sm">Indonesia</span>
+
+    </div>
+
+</section>
+
+<!-- ARTS -->
+<section id="Arts" class="py-24 px-[10%] bg-black">
+
+    <div class="text-center mb-16">
+        <h2 class="text-4xl font-extrabold bg-gradient-to-r from-white to-main bg-clip-text text-transparent">
+            Zee's Cinematography
+        </h2>
+        <p class="text-silver mt-3">
+            Exploring her journey in film & performance
+        </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+        <div class="bg-[#111111] rounded-2xl overflow-hidden hover:-translate-y-2 hover:border hover:border-main hover:shadow-[0_0_25px_rgba(0,210,190,0.4)] transition">
+            <img src="img/film.jpg" class="w-full object-cover">
+            <div class="p-6">
+                <h3 class="font-semibold">Ancika: Dia yang bersamaku 1995</h3>
+                <span class="text-silver text-sm">2024 • Romance</span>
+            </div>
+        </div>
+
+        <div class="bg-[#111111] rounded-2xl overflow-hidden hover:-translate-y-2 hover:border hover:border-main hover:shadow-[0_0_25px_rgba(0,210,190,0.4)] transition">
+            <img src="img/film2.jpg" class="w-full object-cover">
+            <div class="p-6">
+                <h3 class="font-semibold">Sekotengs</h3>
+                <span class="text-silver text-sm">2024 • Drama Medis</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
